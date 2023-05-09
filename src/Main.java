@@ -18,5 +18,7 @@ public class Main {
             System.out.println((i + 1) + " añadido" + "\n");
         }
         System.out.println(mazo2.toString());
+        System.out.println(mazo1.toString());
+
     }
 }

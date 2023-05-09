@@ -6,7 +6,7 @@ import metodosObjetos.Spell;
 import metodosObjetos.Unidad;
 
 public class Crear {
-    public static Carta Crea(Carta carta) {
+    public static Carta Crea() {
         int eleccion;
         String nombre;
         int vida;
@@ -34,8 +34,24 @@ public class Crear {
         return nuevaCarta;
     }
 
-    public static Deck Crea(Unidad unidad, Spell hechizo) {
+    public static Deck Crea (Unidad unidad, Spell hechizo) {
         Deck baraja = null;
+        String nombreBaraja="";
+        int cantidad;
+        nombreBaraja = basicos.caracteres("Introduzca el nombre de la baraja que creara: ");
+        baraja = new Deck(nombreBaraja);
+        do {
+            cantidad = basicos.numericos("Cuantas veces va a añadir la unidad (max 3): ");
+        } while (cantidad < 1 || cantidad > 3);
+        for (int i = 0; i < cantidad; i++) {
+            baraja.addCard(unidad);
+        }
+        do {
+            cantidad = basicos.numericos("Cuantas veces va a añadir el hechizo (max 2): ");
+        } while (cantidad < 1 || cantidad > 3);
+        for (int i = 0; i < cantidad; i++) {
+            baraja.addCard(hechizo);
+        }
         return baraja;
     }
 }
