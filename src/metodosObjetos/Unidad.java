@@ -1,5 +1,9 @@
 package metodosObjetos;
 
+import metodosCRUD.Basicos;
+
+import java.util.ArrayList;
+
 public class Unidad extends Carta {
     private int vida;
     private int poder;
@@ -41,9 +45,9 @@ public class Unidad extends Carta {
         return "Unidad{" +
                 "nombre='" + nombre + '\'' +
                 ", coste=" + coste +
-                ", vida=" + vida +
+                "vida=" + vida +
                 ", poder=" + poder +
-                ", habilidad='" + habilidad + '\'' +
+                ", habilidad='" + habilidad +
                 '}';
     }
 }

@@ -25,7 +25,6 @@ public class Carta {
         this.coste = coste;
     }
 
-
     @Override
     public String toString() {
         return "Carta{" +

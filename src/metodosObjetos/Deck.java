@@ -1,5 +1,8 @@
 package metodosObjetos;
 
+import metodosCRUD.Basicos;
+import metodosCRUD.GestionesCRUD;
+
 import java.util.ArrayList;
 
 public class Deck {
@@ -38,5 +41,7 @@ public class Deck {
     public void addCard(Carta unidad) {
         mazo.add(unidad);
     }
+
+
 }
 

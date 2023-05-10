@@ -1,5 +1,9 @@
 package metodosObjetos;
 
+import metodosCRUD.Basicos;
+
+import java.util.ArrayList;
+
 public class Spell extends Carta {
     private String efecto;
 
@@ -18,10 +22,10 @@ public class Spell extends Carta {
 
     @Override
     public String toString() {
-        return "hechizo{" +
+        return "Spell{" +
                 "nombre='" + nombre + '\'' +
                 ", coste=" + coste +
-                ", efecto='" + efecto + '\'' +
+                "efecto='" + efecto + '\'' +
                 '}';
     }
 }
