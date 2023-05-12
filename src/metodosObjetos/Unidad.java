@@ -1,10 +1,23 @@
 package metodosObjetos;
 
+import metodosCRUD.Basicos;
+
+import java.util.ArrayList;
+
 public class Unidad extends Carta {
     private int vida;
     private int poder;
     private String habilidad;
 
+    /**
+     * Constructor de la clase Unidad que sirve para la creación de criaturas, hereda del método Carta
+     * @param nombre atributo heredado
+     * @param coste atributo heredad
+     * @param vida representa los puntos de daño que puede soportar la unidad
+     * @param poder representa los puntos de daño que hace la unidad
+     * @param habilidad palabra clave que otorga efecto especial a la unidad, puede ser nulo.
+     * @author Quinteiro_Adhemar
+     */
     public Unidad(String nombre, int coste, int vida, int poder, String habilidad) {
         super(nombre, coste);
         this.vida = vida;
@@ -41,9 +54,9 @@ public class Unidad extends Carta {
         return "Unidad{" +
                 "nombre='" + nombre + '\'' +
                 ", coste=" + coste +
-                ", vida=" + vida +
+                "vida=" + vida +
                 ", poder=" + poder +
-                ", habilidad='" + habilidad + '\'' +
+                ", habilidad='" + habilidad +
                 '}';
     }
 }
