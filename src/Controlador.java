@@ -32,18 +32,10 @@ public class Controlador {
                 case 1:
                     if (GestionesCRUD.elegirUnidadHechizo() == 1) {
                         criaturas.add(GestionesCRUD.crearUnidad());
-                        if (longitudUnidades >= 1) {
-                            Conexion.crear(criaturas.get(longitudUnidades));
-                        } else {
-                            System.out.println("No hay criaturas creadas actualmente");
-                        }
+                        Conexion.crear(criaturas.get(longitudUnidades));
                     } else {
                         hechizos.add(GestionesCRUD.crearHechizo());
-                        if(longitudSpell>=1){
                             Conexion.crear(hechizos.get(longitudSpell));
-                        }else{
-                            System.out.println("No hay hechizos creados actualmente");
-                        }
                     }
                     break;
                 case 2:
